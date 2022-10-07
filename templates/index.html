@@ -31,13 +31,6 @@
             </li>
          </ul>
       </div>
-      <script>
-         (function () {
-         var b = document.createElement('script'); b.type = 'text/javascript'; b.async = true;
-         b.src = 'https://js.iterable.com/analytics.js';
-         var a = document.getElementsByTagName('script')[0]; a.parentNode.insertBefore(b, a);
-         })();
-      </script>
    </header>
    <body>
       <!-- Optional; provides methods for query string parsing and working with cookies -->
@@ -57,16 +50,29 @@
                <div class="d-flex col-lg-6">
                   <div class="flex-fill w-100 card">
                      <div class="card-header">
-                        <h5 class="mb-0 card-title">Data Sample</h5>
+                        <h5 class="mb-0 card-title">Create Iterable User Profile</h5>
                      </div>
                      <div class="card-body">
-                        <div class="">
-                           <div class="wrapper text-center">
-                              <!-- Enter an email address, then click the button to track an event -->
-                              Email Address:
-                              <input type="text" id="email" />
-                              <button type="button" onclick="identifyUser()">Identify User</button>
-                              <button type="button" onclick="trackEvent()">Track MyButtonClickedEvent</button>
+                        <p style="font-size:1rem;">This is an demo of how an iterable user profile can be generated. In this example, user identifiers such as <em>email, firstName, isWebUser</em>, and <em>SA_WebUser_Test_Key</em> will be passed to iterable via an API call and stored in the database.</p>
+                        <div>
+                           <div>
+                              <form class="wrapper">
+                                 <div class="form-group row">
+                                   <label for="email" class="col-sm-2 col-form-label">Email</label>
+                                   <div class="col-sm-10">
+                                     <input type="text" id="email" class="form-control" placeholder="email@example.com" aria-label="Email" aria-describedby="basic-addon2">
+                                   </div>
+                                 </div>
+                                 <div class="form-group row">
+                                   <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+                                   <div class="col-sm-10">
+                                     <input type="text" class="form-control" id="firstName" placeholder="John">
+                                   </div>
+                                 </div>
+                                 <div class="form-group text-center">
+                                    <button type="button" onclick="identifyUser()" class="btn btn-primary">Identify User</button>
+                                 </div>
+                               </form>
                            </div>
                         </div>
                      </div>
