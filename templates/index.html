@@ -40,6 +40,8 @@
       </script>
    </header>
    <body>
+      <!-- Optional; provides methods for query string parsing and working with cookies -->
+      <script type="text/javascript" src="https://js.iterable.com/iterableUtils.js"></script>
       <div class="jumbotron">
          <h1 class="display-4">Implementing the Iterable JavaScript SDK</h1>
          <div id="description" class="container">
@@ -60,9 +62,11 @@
                      <div class="card-body">
                         <div class="">
                            <div class="wrapper text-center">
-                              {% for table in tables %}
-                              {{ table|safe }}
-                              {% endfor %}
+                              <!-- Enter an email address, then click the button to track an event -->
+                              Email Address:
+                              <input type="text" id="email" />
+                              <button type="button" onclick="identifyUser()">Identify User</button>
+                              <button type="button" onclick="trackEvent()">Track MyButtonClickedEvent</button>
                            </div>
                         </div>
                      </div>
