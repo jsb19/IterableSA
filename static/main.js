@@ -13,8 +13,11 @@ function identifyUser() {
 // Track a click event, passing a click count (from the current session)
 // that will be stored in the event's dataFields property
 function trackEvent() {
-    _iaq.push(['track', 'MyButtonClickedEvent', {
-        "clickNumber": ++click
+    _iaq.push(['track', 'webSATestEvent', {
+        "platform": "web",
+        "isTestEvent": "true",
+        "url": "https://iterable.com/sa-test/jujhar",
+        "secret_code_key": "Code_2022"
     }]);
 }
 

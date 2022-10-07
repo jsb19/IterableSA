@@ -39,9 +39,6 @@
          <h1 class="display-4">Implementing the Iterable JavaScript SDK</h1>
          <div id="description" class="container">
             <p class="lead">In this project, I examine every shot that Kobe Bryant took during his career in order to build his shot profile. The eventual goal of this project is to train a Machine Learning Model to predict whether Kobe would make or miss a shot based on sample data.</p>
-            <div>
-               <p style="font-weight:bold;">-Mamba out</p>
-            </div>
          </div>
       </div>
       <div class="content main">
@@ -81,10 +78,13 @@
                <div class="d-flex col-lg-6">
                   <div class="flex-fill w-100 card">
                      <div class="card-header">
-                        <h5 class="mb-0 card-title">About the Data</h5>
+                        <h5 class="mb-0 card-title">Create a Custom Event</h5>
                      </div>
                      <div class="card-body">
-                        <p style="font-size:1.75rem;" class="text-center">This dataset was taken from Kaggle.com and it is a compilation of every shot that Kobe Bryant took during his 20 year career in the NBA. As you can see, the dataset is quite extensive. I have attempted to analyze and visualize this data in order to better understand Kobe's shot selection.</p>
+                        <p style="font-size:1rem;">This is an example of the <em>trackEvent</em> method in Iterable's JS SDK. This method is used to send custom events along with custom payloads.</p>
+                        <div>
+                           <button type="button" onclick="trackEvent()" class="btn btn-primary">Fire Custom Event!</button>
+                        </div>
                      </div>
                   </div>
                </div>
